@@ -1,0 +1,80 @@
+.Cart {
+	position: absolute;
+	width: 40%;
+	height: 100vh;
+	background: #fff;
+	z-index: 10;
+	top: -110%;
+	right: 0;
+	padding: 60px 40px;
+	transition: 0.3s all ease;
+	overflow-y: scroll;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+	&_Open {
+		top: 0;
+	}
+
+	.Close {
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		font-size: 3px;
+		color: #000;
+		cursor: pointer;
+		transform: scale(1.6);
+	}
+
+	h3 {
+		text-align: center;
+		font-size: 22px;
+		margin-bottom: 30px;
+	}
+
+	.Empty {
+		text-align: center;
+		margin-bottom: 40px;
+		font-size: 24px;
+	}
+
+	.Cart_Products {
+		margin-bottom: 40px;
+	}
+	.Checkout {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+
+		p {
+			font-size: 20px;
+			margin-bottom: 20px;
+		}
+
+		button {
+			width: 100%;
+			color: #fff;
+			background: #ff033e;
+			margin-bottom: 30px;
+			border: none;
+			outline: none;
+			padding: 10px 0;
+			font-size: 20px;
+			border-radius: 10px;
+			cursor: pointer;
+			transition: 0.3s all ease;
+
+			&:hover {
+				background: #ba0021;
+			}
+
+			&:last-child {
+				background: #17b169;
+
+				&:hover {
+					background: #1b4d3e;
+				}
+			}
+		}
+	}
+}

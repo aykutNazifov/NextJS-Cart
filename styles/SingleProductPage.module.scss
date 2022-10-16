@@ -1,0 +1,42 @@
+.SingleProductPage {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	.Image {
+		width: 50%;
+		height: 60vh;
+		position: relative;
+	}
+
+	.Content {
+		padding: 10px;
+		width: 40%;
+
+		.Buttons {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 20px;
+			button {
+				width: 15%;
+			}
+		}
+
+		button {
+			width: 100%;
+			color: #fff;
+			background: #007fff;
+			border: none;
+			outline: none;
+			padding: 6px 0;
+			font-size: 20px;
+			border-radius: 10px;
+			cursor: pointer;
+			transition: 0.3s all ease;
+
+			&:hover {
+				background: #002d62;
+			}
+		}
+	}
+}

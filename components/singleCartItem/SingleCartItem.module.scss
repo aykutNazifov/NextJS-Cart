@@ -1,0 +1,59 @@
+.Cart_Product {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 100px;
+	margin-bottom: 20px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+		rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+		rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+
+	.Image {
+		height: 100%;
+		width: 35%;
+		position: relative;
+		margin-right: 10px;
+	}
+
+	.Info {
+		width: 30%;
+
+		h5 {
+			margin-bottom: 10px;
+			font-size: 18px;
+		}
+	}
+
+	.Buttons {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		margin-right: 10px;
+		width: 20%;
+
+		button {
+			color: #fff;
+			background: #007fff;
+			border: none;
+			outline: none;
+			padding: 5px 10px;
+			font-size: 20px;
+			border-radius: 5px;
+			cursor: pointer;
+			transition: 0.3s all ease;
+
+			&:hover {
+				background: #002d62;
+			}
+		}
+	}
+
+	.Item_Total_Price {
+		width: 15%;
+		margin-left: auto;
+		margin-right: 10px;
+	}
+}

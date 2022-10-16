@@ -1,0 +1,86 @@
+.Store {
+	padding: 0 40px;
+	padding-top: 100px;
+	padding-bottom: 50px;
+
+	h1 {
+		text-align: center;
+		margin-bottom: 30px;
+	}
+
+	.Options {
+		margin-bottom: 50px;
+		display: flex;
+		align-items: center;
+		gap: 30px;
+
+		@media (max-width: 480px) {
+			flex-direction: column;
+		}
+
+		.Sort {
+			select {
+				outline: none;
+				border-radius: 10px;
+				border: 1px slid #ccc;
+				width: 200px;
+				padding: 10px;
+				background: #fff;
+				cursor: pointer;
+
+				option {
+					height: 20px;
+				}
+			}
+		}
+
+		.Category {
+			select {
+				outline: none;
+				border-radius: 10px;
+				border: 1px slid #ccc;
+				width: 200px;
+				padding: 10px;
+				background: #fff;
+				cursor: pointer;
+
+				option {
+					height: 20px;
+				}
+			}
+		}
+
+		.Search {
+			width: 350px;
+			border: 1px solid #ccc;
+			border-radius: 10px;
+			overflow: hidden;
+			background: red;
+			position: relative;
+
+			.Search_Icon {
+				position: absolute;
+				right: 5px;
+				top: 50%;
+				transform: translateY(-50%);
+				color: #ccc;
+			}
+
+			input {
+				width: 100%;
+				padding: 10px 10px;
+				font-size: 18px;
+				border: none;
+				outline: none;
+			}
+		}
+	}
+
+	.Products {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		grid-row-gap: 40px;
+		margin-bottom: 40px;
+	}
+}
